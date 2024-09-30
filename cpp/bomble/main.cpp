@@ -5,10 +5,16 @@ using namespace std;
 
 int main(){
 	vector<int> bombel;
-	bombel.push_back(6);
-	bombel.push_back(9);
-	bombel.push_back(1);
-	bombel.push_back(2);
+	int n;
+	cout << "Podaj ilość liczb: ";
+	cin >> n;
+	int l;
+	for(int x = 0; x<n; x++){
+		int y = x + 1;
+		cout << "Liczba " << y << ": ";
+		cin >> l;
+		bombel.push_back(l);
+	}
 
 	for(int i = 0; i<bombel.size() - 1; i++){
 		for(int j = 0; j<bombel.size() - 1; j++){
